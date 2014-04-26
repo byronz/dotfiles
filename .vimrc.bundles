@@ -1,19 +1,16 @@
 set nocompatible
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
-call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tsaleh/vim-matchit'
+" Bundle 'tsaleh/vim-matchit'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
@@ -35,13 +32,15 @@ Bundle 'klen/python-mode'
 Bundle 'pangloss/vim-javascript'
 Bundle 'mutewinter/swap-parameters'
 Bundle 'swaroopch/vim-markdown-preview'
-Bundle 'tpope/vim-cucumber'
+Bundle 'mattn/emmet-vim'
+
+" Bundle 'tpope/vim-cucumber'
 
 filetype on
 
 " Bundle 'Shougo/unite.vim'
 " Bundle 'kchmck/vim-coffee-script'
-" Bundle 'mattn/emmet-vim'
+ 
 " Bundle 'Raimondi/delimitMate'
 " Bundle 'tpope/vim-endwise'
 " Bundle 'davidhalter/jedi-vim'
@@ -93,3 +92,4 @@ filetype on
 " Bundle 'vim-scripts/Align'
 " Bundle 'vim-scripts/greplace.vim'
 " Bundle 'vim-scripts/kwbdi.vim'
+

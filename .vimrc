@@ -1,19 +1,29 @@
 " 1. https://raw.github.com/thoughtbot/dotfiles/master/vimrc
 " 2. https://github.com/square/maximum-awesome/blob/master/vimrc
 
-
-" General settings
 set nocompatible
-syntax on
 
-filetype plugin indent on
+" enable syntax highlighting
+syntax enable
 
+" configure Vundle
+filetype on " without this vim emits a zero exit status, later, because of :ft off
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
+call vundle#rc()
+
+" install Vundle bundles
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
   " source ~/.vimrc.bundles.local
 endif
 
-colorscheme Darkside
+" ensure ftdetect et al work by including this after the Vundle stuff
+filetype plugin indent on
+
+
+" colorscheme Darkside
 
 let mapleader=','
 let maplocalleader='\'
