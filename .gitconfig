@@ -1,0 +1,16 @@
+[user]
+    name = Byron Zhu
+    email = byron.zhu@nuance.com
+
+[core]
+    editor = vim
+
+[color]
+    ui = true
+
+[diff]
+    tool = meld
+
+[alias]
+    s = status
+    sb = status -s -b
